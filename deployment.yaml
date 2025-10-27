@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: testselenium
-        image: shivaji108/sample:testimg
+        image: shivaji108/testdemo:v1
         ports:
         - containerPort: 5000
