@@ -1,19 +1,19 @@
-apiVersion:apps/v1
-kind:Deployment
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name:testselenium-Deployment
+  name: testselenium-deployment
 spec:
-  replicas:2
+  replicas: 2
   selector:
     matchLabels:
-      app:testselenium
-  templates:
+      app: testselenium
+  template:
     metadata:
       labels:
-        app:testselenium
+        app: testselenium
     spec:
       containers:
-      - name:testselenium
-        image:shivaji108/sample:testimg
+      - name: testselenium
+        image: shivaji108/sample:testimg
         ports:
-        - containerPort:5000
+        - containerPort: 5000
